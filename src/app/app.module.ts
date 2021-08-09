@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './service/in-memory-data.service';
 import { HeroSearchComponent } from './component/hero-search/hero-search.component';
+import {UppercaseLowercasePipe} from '../app/component/hero-detail/Uppercase-lowercase.pipe'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { HeroSearchComponent } from './component/hero-search/hero-search.compone
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    UppercaseLowercasePipe
   ],
   imports: [
     BrowserModule,
